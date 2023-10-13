@@ -24,14 +24,14 @@ function init(path, size) {
 
     let ranx, rany;
     let point;
-    for (let i = 0; i <= 40000; i++) {    // points amount must depend on canvas size and text width
+    for (let i = 0; i <= 40000; i++) {    // 
 
         ranx = Math.random() * pathWidth + bbox[0];
         rany = Math.random() * pathHeight + bbox[1];
 
         if (ctx.isPointInPath(p2, ranx, rany)) {
 
-            // to make things easier to understand imma divide points 
+            // 
 
             point = {
                 'X': ranx,
@@ -58,8 +58,8 @@ function init(path, size) {
                 point['FadeInDelay'] = 80;  // used as countdown
             }
 
-            let angle = Math.random() * 360 * Math.PI / 180; // no radians kek
-            let range = Math.random() * canvas.width / 5;  // may depend on canvas size
+            let angle = Math.random() * 360 * Math.PI / 180; // 
+            let range = Math.random() * canvas.width / 5;  // 
 
             point['InitialX'] = point['X'] + range * Math.sin(angle);
             point['InitialY'] = point['Y'] + range * Math.cos(angle);
